@@ -51,11 +51,9 @@ admin.messaging().send(message)
     console.error('Error sending notification:', error);
   });
 
-/*
-
 const registrationTokens = [
   'c3sWb-LOSt2SN98hw_QOQm:APA91bHrkupguze5Ns5xkJcZ2CIYCddRFqy-8qyUaxS4uGAcw4oKzVovxeI7pDto1LFXnJ3p8xkeWVqz8QdKgQ0NpMl5Gb3JGF_CyEhynzmVjTKBR7t68gf2E9WhE1loLI1BuYx6qUD8',
-  'fIJD8LZ8S2uF_03rszWhus:APA91bEzZIC7BfaeE6TYGWlhYft7Ul3wWRvGoAvSLXrQ8a7KkliRZzE0DBRfrF5leRCNZH_IKxUkzwMW2XWUbhAQ3d04NQ-TKiJ3gn0qECSZ_8EISYYiD-LBSWWySxpcHJtXMujEzbCO'
+  'fIJD8LZ8S2uF_03rszWhus:APA91bEe5qyBjNW4QSJkNLmnJw6JJtc_jMEWLIMyue7xOMxCqOEHuUAaZBgJAEcDBIb1ZtxZ0lqUWExFYOIGpJrgb216godPrwNNY8l2KFHGCWbmt6SNoPD5z1-b7PPOKuiItyJEimOn'
 ]
 
 const multicastMessage = {
@@ -80,7 +78,7 @@ const multicastMessage = {
     operator: 'Metro',
     locationName: 'Sagrada Família'
   },
-  token: registrationTokens
+  tokens: registrationTokens
 }
 
 admin.messaging().sendEachForMulticast(multicastMessage)
@@ -99,5 +97,3 @@ admin.messaging().sendEachForMulticast(multicastMessage)
   .catch((error) => {
     console.error('Error sending notification:', error);
   });
-
-  */
